@@ -1,0 +1,29 @@
+{
+  "clearMocks": true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.ts",
+    "!**/node_modules/**"
+  ],
+  "verbose": true,
+  "coverageDirectory": "./coverage",
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/coverage/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/src/index.ts"
+  ],
+  "moduleFileExtensions": ["js", "ts"],
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "testMatch": ["<rootDir>/**/*.test.ts"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  }
+}
